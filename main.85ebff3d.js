@@ -291,7 +291,7 @@ function fetchAnimals(e) {
   }
 
   // Fetch pets
-  (0, _fetchJsonp2.default)('http://api.petfinder.com/pet.find?format=json&key=e2d4d86f5cbdc1aecf4a54c3bda01144&animal=' + animal + '&location=' + zip, {
+  (0, _fetchJsonp2.default)('https://api.petfinder.com/pet.find?format=json&key=e2d4d86f5cbdc1aecf4a54c3bda01144&animal=' + animal + '&location=' + zip, {
     jsonpCallbackFunction: 'callback'
   }).then(function (res) {
     return res.json();
@@ -358,7 +358,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '55487' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '51040' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
